@@ -1,10 +1,10 @@
 # Docker-Apache
 
 Once you have all setting done, then you can find the following results  
-1. Image build successful  
+1. Build image  successful  
 ![Alt text](img/1.JPG?raw=true)
 
-2. Image runs successful  
+2. Run image successful  
 ![Alt text](img/2.JPG?raw=true)
 
 ## Docker Container Apache Manual Setting
@@ -74,4 +74,6 @@ After you have the command run, get back to the application Kitematic panel to e
 ![Alt text](img/5.JPG?raw=true)
 
 ### Change Volume path
+If you want to change the path, just keep in mind, you need to keep the base path(//c/Users/(your login user name)/Documents/Kitematic) as prefix.  
+If you dont, the applicatioln wont let you do it  
 ![Alt text](img/6.JPG?raw=true)
