@@ -1,5 +1,12 @@
 # Docker-Apache
 
+Once you have all setting done, then you can find the following results  
+1. Image build successful  
+![Alt text](img/1.JPG?raw=true)
+
+2. Image runs successful  
+![Alt text](img/2.JPG?raw=true)
+
 ## Docker Container Apache Manual Setting
 1. Pull apache2(httpd) package from the docker hub
 ```
@@ -43,3 +50,28 @@ docker build -t local-httpd:1.0 .
 ```
 docker run -d -i -t -p 8080:80 -p 8081:443 --name httpd local-httpd:1.0
 ```
+## Docker Apache Volume (Windows)
+On windows OS, you need to use the application path of Kitematic to setup a container volume  
+Windows OS application Kitematic default document path is 
+```
+C:\Users\(your login user name)\Documents\Kitematic
+```
+
+Docker windows volume base path  
+![Alt text](img/3.JPG?raw=true)
+
+Where to see your volume via the application  
+![Alt text](img/4.JPG?raw=true)
+
+### Volume setup
+For a container, setting the volume mount path should be follow the -v and for windows user, just keep in mind, use **//c/** instead of **C:/**  
+```
+docker run -d -i -t -p 8080:80 -p 8081:443 -v //c/Users/(your login user name)/Documents/Kitematic:/usr/local/apache2/conf/sites --name httpd local-httpd:1.0
+```
+
+### Enable Volume Setting
+After you have the command run, get back to the application Kitematic panel to enable the volume  
+![Alt text](img/5.JPG?raw=true)
+
+### Change Volume path
+![Alt text](img/6.JPG?raw=true)
