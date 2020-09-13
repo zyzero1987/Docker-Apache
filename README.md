@@ -1,4 +1,9 @@
 # Docker-Apache
+Once you have all setting done, then you can find the following results  
+Image build successful  
+![Alt text](img/1.JPG?raw=true "Title")
+Image runs successful  
+![Alt text](img/2.JPG?raw=true "Title")
 
 ## Docker Container Apache Manual Setting
 1. Pull apache2(httpd) package from the docker hub
