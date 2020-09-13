@@ -1,8 +1,10 @@
 # Docker-Apache
+
 Once you have all setting done, then you can find the following results  
-Image build successful  
+1. Image build successful  
 ![Alt text](img/1.JPG?raw=true "Title")
-Image runs successful  
+
+2. Image runs successful  
 ![Alt text](img/2.JPG?raw=true "Title")
 
 ## Docker Container Apache Manual Setting
