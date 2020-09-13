@@ -18,8 +18,7 @@ IncludeOptional conf/sites/*.conf
 ```
 docker cp conf/httpd.conf httpd:/usr/local/apache2/conf
 ```
-## Docker-Apache(Dockerfile Setting)
-Docker Container Apache Dockerfile Setting
+## Docker Container Apache Dockerfile Setting
 
 1. Create Dockerfile with the following content
 ```
